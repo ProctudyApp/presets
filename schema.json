@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "items": {
+      "$ref": "#/definitions/Timetable"
+  },
+  "definitions": {
+      "Timetable": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+              "enName": {
+                  "type": "string"
+              },
+              "jaName": {
+                  "type": "string"
+              },
+              "items": {
+                  "type": "array",
+                  "items": {
+                      "$ref": "#/definitions/Item"
+                  }
+              }
+          },
+          "required": [
+              "items",
+              "jaName",
+              "enName"
+          ],
+          "title": "Timetable"
+      },
+      "Item": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+              "enName": {
+                  "type": "string"
+              },
+              "jaName": {
+                  "type": "string"
+              },
+              "minute": {
+                  "type": "integer"
+              },
+              "isBreak": {
+                  "type": "boolean"
+              }
+          },
+          "required": [
+              "isBreak",
+              "jaName",
+              "minute",
+              "enName"
+          ],
+          "title": "Item"
+      }
+  }
+}

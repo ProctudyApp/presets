@@ -1,0 +1,12 @@
+{
+  "name": "proctudy-presets",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "validate": "node validate.js"
+  },
+  "dependencies": {
+    "ajv": "^8.11.0"
+  }
+}
