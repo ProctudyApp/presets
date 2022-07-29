@@ -1,41 +1,34 @@
 [
   {
-    "enName": "Pomodoro",
-    "jaName": "ポモドーロ",
+    "name": "ポモドーロ",
     "items": [
       {
-        "enName": "Work",
-        "jaName": "作業",
+        "name": "作業",
         "minute": 25,
         "isBreak": false
       },
       {
-        "enName": "Break",
-        "jaName": "休憩",
+        "name": "休憩",
         "minute": 5,
         "isBreak": true
       },
       {
-        "enName": "Work",
-        "jaName": "作業",
+        "name": "作業",
         "minute": 25,
         "isBreak": false
       },
       {
-        "enName": "Break",
-        "jaName": "休憩",
+        "name": "休憩",
         "minute": 5,
         "isBreak": true
       },
       {
-        "enName": "Work",
-        "jaName": "作業",
+        "name": "作業",
         "minute": 25,
         "isBreak": false
       },
       {
-        "enName": "Break",
-        "jaName": "休憩",
+        "name": "休憩",
         "minute": 5,
         "isBreak": true
       }

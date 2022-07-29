@@ -9,10 +9,7 @@
           "type": "object",
           "additionalProperties": false,
           "properties": {
-              "enName": {
-                  "type": "string"
-              },
-              "jaName": {
+              "name": {
                   "type": "string"
               },
               "items": {
@@ -24,8 +21,7 @@
           },
           "required": [
               "items",
-              "jaName",
-              "enName"
+              "name"
           ],
           "title": "Timetable"
       },
@@ -33,10 +29,7 @@
           "type": "object",
           "additionalProperties": false,
           "properties": {
-              "enName": {
-                  "type": "string"
-              },
-              "jaName": {
+              "name": {
                   "type": "string"
               },
               "minute": {
@@ -48,9 +41,8 @@
           },
           "required": [
               "isBreak",
-              "jaName",
               "minute",
-              "enName"
+              "name"
           ],
           "title": "Item"
       }
