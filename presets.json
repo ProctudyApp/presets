@@ -4,34 +4,39 @@
     "description": "「ポモドーロ・テクニック」とは、25分間の作業と短い休息を繰り返すテクニックのことで、集中してタスクに取り組むことができると言われています。",
     "items": [
       {
-        "name": "作業",
+        "name": "作業1",
         "minute": 25,
         "isBreak": false
       },
       {
-        "name": "休憩",
+        "name": "休憩1",
         "minute": 5,
         "isBreak": true
       },
       {
-        "name": "作業",
+        "name": "作業2",
         "minute": 25,
         "isBreak": false
       },
       {
-        "name": "休憩",
+        "name": "休憩2",
         "minute": 5,
         "isBreak": true
       },
       {
-        "name": "作業",
+        "name": "作業3",
         "minute": 25,
         "isBreak": false
       },
       {
-        "name": "休憩",
+        "name": "休憩3",
         "minute": 5,
         "isBreak": true
+      },
+      {
+        "name": "作業4",
+        "minute": 25,
+        "isBreak": false
       }
     ]
   }
