@@ -4,7 +4,7 @@
   "description": "",
   "type": "module",
   "scripts": {
-    "validate": "npx ajv validate -s schema.json -d presets.json"
+    "validate": "npx ajv validate -s schema.json -d \"presets/*.json\""
   },
   "dependencies": {
     "ajv-cli": "^5.0.0"

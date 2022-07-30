@@ -1,54 +1,41 @@
 {
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "type": "array",
-  "items": {
-      "$ref": "#/definitions/Timetable"
-  },
-  "definitions": {
-      "Timetable": {
-          "type": "object",
-          "additionalProperties": false,
-          "properties": {
-              "name": {
-                  "type": "string"
-              },
-              "description": {
-                "type": "string"
-              },
-              "items": {
-                  "type": "array",
-                  "items": {
-                      "$ref": "#/definitions/Item"
-                  }
-              }
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "name": {
+            "type": "string"
           },
-          "required": [
-              "items",
-              "description",
-              "name"
-          ],
-          "title": "Timetable"
-      },
-      "Item": {
-          "type": "object",
-          "additionalProperties": false,
-          "properties": {
-              "name": {
-                  "type": "string"
-              },
-              "minute": {
-                  "type": "integer"
-              },
-              "isBreak": {
-                  "type": "boolean"
-              }
+          "minute": {
+            "type": "integer"
           },
-          "required": [
-              "isBreak",
-              "minute",
-              "name"
-          ],
-          "title": "Item"
+          "isBreak": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "name",
+          "minute",
+          "isBreak"
+        ]
       }
-  }
+    }
+  },
+  "required": [
+    "name",
+    "description",
+    "items"
+  ]
 }
